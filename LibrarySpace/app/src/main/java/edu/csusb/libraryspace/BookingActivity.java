@@ -10,6 +10,39 @@ public class BookingActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        
+        TextView txt = (TextView) findViewById(R.id.bookingHeader);
+        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/Dosis.ttf");
+        txt.setTypeface(font);
+
+        TextView txt = (TextView) findViewById(R.id.detailsText);
+        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/Dosis.ttf");
+        txt.setTypeface(font);
+
+        TextView txt = (TextView) findViewById(R.id.fullNameText);
+        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/Dosis.ttf");
+        txt.setTypeface(font);
+
+        TextView txt = (TextView) findViewById(R.id.maxText);
+        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/Dosis.ttf");
+        txt.setTypeface(font);
+
+        TextView txt = (TextView) findViewById(R.id.emailText);
+        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/Dosis.ttf");
+        txt.setTypeface(font);
+
+        TextView txt = (TextView) findViewById(R.id.reminderEmailText);
+        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/Dosis.ttf");
+        txt.setTypeface(font);
+
+        TextView txt = (TextView) findViewById(R.id.publicLabelText);
+        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/Dosis.ttf");
+        txt.setTypeface(font);
+
+        TextView txt = (TextView) findViewById(R.id.requiredFieldsText);
+        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/Dosis.ttf");
+        txt.setTypeface(font);
+        
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_booking);
     }
