@@ -14,6 +14,22 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        
+        TextView txt = (TextView) findViewById(R.id.headerText);
+        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/Dosis.ttf");
+        txt.setTypeface(font);
+
+        TextView txt = (TextView) findViewById(R.id.groupButton);
+        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/Dosis.ttf");
+        txt.setTypeface(font);
+
+        TextView txt = (TextView) findViewById(R.id.individualButton);
+        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/Dosis.ttf");
+        txt.setTypeface(font);
+
+        TextView txt = (TextView) findViewById(R.id.multimediaButton);
+        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/Dosis.ttf");
+        txt.setTypeface(font);
     }
 
     @Override
