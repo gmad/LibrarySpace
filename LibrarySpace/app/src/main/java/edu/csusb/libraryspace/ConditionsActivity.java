@@ -10,6 +10,15 @@ public class ConditionsActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        
+        TextView txt = (TextView) findViewById(R.id.conditionsHeaderText);
+        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/Dosis.ttf");
+        txt.setTypeface(font);
+
+        TextView txt = (TextView) findViewById(R.id.bodyText);
+        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/Dosis.ttf");
+        txt.setTypeface(font);
+        
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_conditions);
     }
