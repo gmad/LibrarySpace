@@ -12,6 +12,18 @@ public class IndividualActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_individual);
+        
+        TextView txt = (TextView) findViewById(R.id.divider);
+        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/Dosis.ttf");
+        txt.setTypeface(font);
+
+        TextView txt = (TextView) findViewById(R.id.roomText);
+        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/Dosis.ttf");
+        txt.setTypeface(font);
+
+        TextView txt = (TextView) findViewById(R.id.hourText);
+        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/Dosis.ttf");
+        txt.setTypeface(font);
     }
 
 
