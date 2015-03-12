@@ -15,21 +15,20 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         
-        TextView txt = (TextView) findViewById(R.id.headerText);
-        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/Dosis.ttf");
-        txt.setTypeface(font);
-
-        TextView txt = (TextView) findViewById(R.id.groupButton);
-        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/Dosis.ttf");
-        txt.setTypeface(font);
-
-        TextView txt = (TextView) findViewById(R.id.individualButton);
-        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/Dosis.ttf");
-        txt.setTypeface(font);
-
-        TextView txt = (TextView) findViewById(R.id.multimediaButton);
-        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/Dosis.ttf");
-        txt.setTypeface(font);
+        // Font path
+        String fontPath = "fonts/dosis-regular.ttf";
+        // text view label
+        TextView txtHeaderText = (TextView) findViewById(R.id.headerText);
+        TextView txtGroupText = (TextView) findViewById(R.id.groupButton);
+        TextView txtIndividualText = (TextView) findViewById(R.id.individualButton);
+        TextView txtMultimediaText = (TextView) findViewById(R.id.multimediaButton);
+        // Loading Font Face
+        Typeface tf = Typeface.createFromAsset(getAssets(),fontPath);
+        // Applying font
+        txtHeaderText.setTypeface(tf);
+        txtGroupText.setTypeface(tf);
+        txtIndividualText.setTypeface(tf);
+        txtMultimediaText.setTypeface(tf);
     }
 
     @Override
