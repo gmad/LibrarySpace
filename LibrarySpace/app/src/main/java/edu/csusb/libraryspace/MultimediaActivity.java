@@ -13,25 +13,18 @@ public class MultimediaActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_multimedia);
         
-        TextView txt = (TextView) findViewById(R.id.divider);
-        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/Dosis.ttf");
-        txt.setTypeface(font);
-
-        TextView txt = (TextView) findViewById(R.id.roomText);
-        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/Dosis.ttf");
-        txt.setTypeface(font);
-
-        TextView txt = (TextView) findViewById(R.id.hourText);
-        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/Dosis.ttf");
-        txt.setTypeface(font);
-
-        TextView txt = (TextView) findViewById(R.id.pdfButton);
-        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/Dosis.ttf");
-        txt.setTypeface(font);
-
-        TextView txt = (TextView) findViewById(R.id.descriptionButton);
-        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/Dosis.ttf");
-        txt.setTypeface(font);
+        // Font path
+        String fontPath = "fonts/dosis-regular.ttf";
+        // text view label
+        TextView txtDividerText = (TextView) findViewById(R.id.divider);
+        TextView txtRoomText = (TextView) findViewById(R.id.roomText);
+        TextView txtHourText = (TextView) findViewById(R.id.hourText);
+        // Loading Font Face
+        Typeface tf = Typeface.createFromAsset(getAssets(),fontPath);
+        // Applying font
+        txtDividerText.setTypeface(tf);
+        txtRoomText.setTypeface(tf);
+        txtHourText.setTypeface(tf);
     }
 
 
