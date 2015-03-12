@@ -10,41 +10,28 @@ public class BookingActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        
-        TextView txt = (TextView) findViewById(R.id.bookingHeader);
-        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/Dosis.ttf");
-        txt.setTypeface(font);
-
-        TextView txt = (TextView) findViewById(R.id.detailsText);
-        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/Dosis.ttf");
-        txt.setTypeface(font);
-
-        TextView txt = (TextView) findViewById(R.id.fullNameText);
-        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/Dosis.ttf");
-        txt.setTypeface(font);
-
-        TextView txt = (TextView) findViewById(R.id.maxText);
-        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/Dosis.ttf");
-        txt.setTypeface(font);
-
-        TextView txt = (TextView) findViewById(R.id.emailText);
-        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/Dosis.ttf");
-        txt.setTypeface(font);
-
-        TextView txt = (TextView) findViewById(R.id.reminderEmailText);
-        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/Dosis.ttf");
-        txt.setTypeface(font);
-
-        TextView txt = (TextView) findViewById(R.id.publicLabelText);
-        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/Dosis.ttf");
-        txt.setTypeface(font);
-
-        TextView txt = (TextView) findViewById(R.id.requiredFieldsText);
-        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/Dosis.ttf");
-        txt.setTypeface(font);
-        
+    
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_booking);
+        
+        // Font path
+        String fontPath = "fonts/dosis-regular.ttf";
+        // text view label
+        TextView txtBookingHeader = (TextView) findViewById(R.id.bookingHeader);
+        TextView txtFullNameText = (TextView) findViewById(R.id.fullNameText);
+        TextView txtEmailText = (TextView) findViewById(R.id.emailText);
+        TextView txtReminderEmailText = (TextView) findViewById(R.id.reminderEmailText);
+        TextView txtPublicLabelText = (TextView) findViewById(R.id.publicLabelText);
+        TextView txtRequiredFieldsText = (TextView) findViewById(R.id.requiredFieldsText);
+        // Loading Font Face
+        Typeface tf = Typeface.createFromAsset(getAssets(),fontPath);
+        // Applying font
+        txtBookingHeader.setTypeface(tf);
+        txtFullNameText.setTypeface(tf);
+        txtEmailText.setTypeface(tf);
+        txtReminderEmailText.setTypeface(tf);
+        txtPublicLabelText.setTypeface(tf);
+        txtRequiredFieldsText.setTypeface(tf);
     }
 
 
