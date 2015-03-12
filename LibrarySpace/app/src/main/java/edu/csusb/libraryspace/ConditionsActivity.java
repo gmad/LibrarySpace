@@ -10,17 +10,20 @@ public class ConditionsActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        
-        TextView txt = (TextView) findViewById(R.id.conditionsHeaderText);
-        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/Dosis.ttf");
-        txt.setTypeface(font);
-
-        TextView txt = (TextView) findViewById(R.id.bodyText);
-        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/Dosis.ttf");
-        txt.setTypeface(font);
-        
+   
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_conditions);
+        
+        // Font path
+        String fontPath = "fonts/dosis-regular.ttf";
+        // text view label
+        TextView txtConditionsHeaderText = (TextView) findViewById(R.id.conditionsHeaderText);
+        TextView txtBodyText = (TextView) findViewById(R.id.bodyText);
+        // Loading Font Face
+        Typeface tf = Typeface.createFromAsset(getAssets(),fontPath);
+        // Applying font
+        txtConditionsHeaderText.setTypeface(tf);
+        txtBodyText.setTypeface(tf);
     }
 
 
